@@ -10,6 +10,7 @@
 |---|---|
 | bubble_top / bubble_mid / bubble_bot | 消息气泡的头部（珍珠头像圈）、正文（九宫格拉伸）、尾部 |
 | bubble_top_heart | 备用头部：爱心窗口款 |
+| ring_overlay | 盖在头像上面的珍珠圈（中间挖空） |
 | topbar / input_bar | 顶栏、输入框 |
 | btn_* / ico_* | 输入框按钮、编辑、更多、星标、箭头、勾叉、顶栏图标 |
 | frame_circle / frame_heart / frame_portrait | 备用头像框 |
