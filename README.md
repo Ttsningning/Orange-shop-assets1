@@ -8,5 +8,7 @@ SillyTavern（酒馆）美化主题和配套素材。图片都是透明底 PNG�
 |---|---|---|
 | 月光海·玻璃 | `moonsea/` | `moonsea/月光海·玻璃.json` |
 | 珍珠女士 | `pearl/` | `pearl/珍珠女士.json` |
+| 星月法师 | `starmage/` | `starmage/星月法师.json` |
+| 蔷薇少年 | `roseboy/` | `roseboy/蔷薇少年.json` |
 
 导入方法：酒馆 → 用户设置 → UI 主题 → 导入 JSON。
