@@ -1,8 +1,8 @@
-# 珍珠红唇（酒馆美化）
+# 珍珠女士（酒馆美化）
 
 宁宁 × Claude 自制的 SillyTavern 手机端美化：酒红、珍珠、玫瑰和复古少女漫。素材都是透明底 PNG，通过 jsDelivr 引用。
 
-- 导入：酒馆 → 用户设置 → UI 主题 → 导入 `珍珠红唇.json`
+- 导入：酒馆 → 用户设置 → UI 主题 → 导入 `珍珠女士.json`
 - 调位置、颜色：改 `src/theme.css` 开头 `:root` 里的变量，然后运行 `python3 src/build.py` 重新生成 JSON
 - 链接前缀：`https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@main/pearl/`
 

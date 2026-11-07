@@ -1,5 +1,5 @@
 """把 theme.css 打包成酒馆可导入的主题 JSON。
-用法：python3 build.py  → 生成上一级目录里的 珍珠红唇.json
+用法：python3 build.py  → 生成上一级目录里的 珍珠女士.json
 """
 import json, pathlib
 
@@ -7,7 +7,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 CDN = "https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@main/pearl/"
 
 SETTINGS = {
-    "name": "珍珠红唇",
+    "name": "珍珠女士",
     "blur_strength": 0,
     "main_text_color": "rgba(91, 34, 48, 1)",
     "italics_text_color": "rgba(160, 86, 106, 1)",
@@ -54,6 +54,6 @@ def css(base: str) -> str:
 
 if __name__ == "__main__":
     data = dict(SETTINGS, custom_css=css(CDN))
-    out = HERE.parent / "珍珠红唇.json"
+    out = HERE.parent / "珍珠女士.json"
     out.write_text(json.dumps(data, ensure_ascii=False, indent=4), encoding="utf-8")
     print("wrote", out)

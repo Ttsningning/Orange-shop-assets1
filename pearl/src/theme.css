@@ -1,4 +1,4 @@
-/*【珍珠红唇】宁宁 × Claude 自制
+/*【珍珠女士】宁宁 × Claude 自制
   素材：Ttsningning/orange-shop-assets1 仓库 pearl 文件夹
   结构参考了易碎蝶老师的拼接气泡思路，代码为重新编写
   ⭕ 想调位置、颜色、文字，只改下面 :root 里的变量就行 */
@@ -356,9 +356,9 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 22px;
+    width: 20px;
     height: 18px;
-    background: url("IMG/deco_sparkle.png") center / contain no-repeat;
+    background: url("IMG/deco_heartgem.png") center / contain no-repeat;
 }
 #chat .mes .mes_reasoning {
     color: #8a4a58 !important;
@@ -403,6 +403,7 @@ body {
     font-size: 0 !important;
     background: center / contain no-repeat;
     opacity: 1 !important;
+    background-image: url("IMG/deco_heartgem.png");   /* 插件加的图标没有专属图时，默认用小爱心，不会空白 */
     filter: drop-shadow(0 0 3px rgba(255, 220, 215, .7));
     transition: transform .25s ease;
 }
@@ -602,8 +603,8 @@ body {
     top: 50%;
     transform: translateY(-50%);
     width: 18px;
-    height: 20px;
-    background: url("IMG/deco_star1.png") center / contain no-repeat;
+    height: 18px;
+    background: url("IMG/deco_heartgem.png") center / contain no-repeat;
 }
 
 .menu_button {
@@ -637,11 +638,11 @@ input[type="checkbox"]:checked { background-color: #b0303f !important; }
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 22px;
-    height: 24px;
+    width: 16px;
+    height: 28px;
     border: 0;
     border-radius: 0;
-    background: url("IMG/deco_star1.png") center / contain no-repeat;
+    background: url("IMG/deco_lipstick.png") center / contain no-repeat;
     box-shadow: none;
 }
 .neo-range-slider {
