@@ -397,6 +397,7 @@ body {
     font-size: 0 !important;
     background: center / contain no-repeat;
     opacity: 1 !important;
+    background-image: url("IMG/deco_star1.png");   /* 插件加的图标没有专属图时，默认用星星，不会空白 */
     filter: drop-shadow(0 0 3px rgba(190, 210, 255, .8));
     transition: transform .25s ease;
 }
