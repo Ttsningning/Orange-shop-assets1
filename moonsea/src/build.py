@@ -4,7 +4,7 @@
 import json, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-CDN = "https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@main/moonsea/"
+CDN = "https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@8a19c730f87c/moonsea/"
 
 SETTINGS = {
     "name": "月光海·玻璃",

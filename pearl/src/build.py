@@ -4,7 +4,7 @@
 import json, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
-CDN = "https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@main/pearl/"
+CDN = "https://cdn.jsdelivr.net/gh/Ttsningning/orange-shop-assets1@8a19c730f87c/pearl/"
 
 SETTINGS = {
     "name": "珍珠女士",
