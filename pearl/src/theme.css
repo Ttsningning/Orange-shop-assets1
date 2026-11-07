@@ -138,7 +138,7 @@ body {
 #chat .mes .mesAvatarWrapper .avatar {
     position: absolute !important;
     left: 7.97%;
-    top: 20.9%;
+    top: 19.4%;     /* 头像上下：数字越小越往上 */
     width: 18.31% !important;
     height: auto !important;
     aspect-ratio: 1;
@@ -153,7 +153,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("IMG/ring_overlay.png") 0 0 / 100% 100% no-repeat;
+    background: url("IMG/ring_overlay2.png") 0 0 / 100% 100% no-repeat;
     pointer-events: none;
     z-index: 2;
 }
@@ -492,6 +492,11 @@ body {
     background: center / 32px auto no-repeat !important;
     opacity: 1 !important;
 }
+/* 输入框按钮上下位置：数字越大越往下 */
+#options_button,
+#extensionsMenuButton,
+#send_but,
+#mes_stop .fa-circle-stop { transform: translateY(3px); }
 #options_button { background-image: url("IMG/btn_menu.png") !important; }
 #extensionsMenuButton { background-image: url("IMG/btn_plus.png") !important; }
 #send_but { background-image: url("IMG/btn_send.png") !important; }
