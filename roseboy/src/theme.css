@@ -762,3 +762,84 @@ input[type="range"]::-webkit-slider-thumb {
 
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-thumb { background: #ccb5bb; border-radius: 4px; }
+
+/* ================= 拼好图版气泡（宁宁提供的整张图） =================
+   下面这段覆盖上面同名的旧参数。想微调位置：改这里的数字 */
+:root {
+    --比例: calc(var(--气泡宽) / 1319);
+    --头高: calc(var(--气泡宽) * 0.24033);
+    --头上移: 0px;
+    --尾高: calc(var(--气泡宽) * 0.14329);
+    --顶栏高: min(calc(100vw * 0.1395), 64px);
+    --输入框高: min(calc(100vw * 0.1792), 76px);
+    --topBarBlockSize: var(--顶栏高);
+}
+#chat .mes {
+    padding: calc(var(--比例) * 339.0) calc(var(--比例) * 100.0) calc(var(--比例) * 32.0) calc(var(--比例) * 105.0) !important;
+    min-height: calc(var(--比例) * 626.0) !important;
+    border-image-source: url("IMG/bubble_full.png") !important;
+    border-image-slice: 515 74 111 100 fill !important;
+    border-image-width: calc(var(--比例) * 515.0) calc(var(--比例) * 74.0) calc(var(--比例) * 111.0) calc(var(--比例) * 100.0) !important;
+}
+#chat .mes:first-of-type { margin-top: 12px !important; }
+#chat .mes::before { content: none !important; }
+#chat .mes::after {
+    top: calc(100% + calc(var(--比例) * 18.0)) !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: var(--尾高) !important;
+    background-image: url("IMG/bubble_bot2.png") !important;
+}
+#chat .mes .mesAvatarWrapper,
+#chat .mes .ch_name {
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: var(--头高) !important;
+}
+#chat .mes .mesAvatarWrapper {
+    padding-left: 31.77% !important;
+}
+#chat .mes .mesAvatarWrapper { padding-top: calc(var(--头高) * 0.8013) !important; }
+#chat .mes .mesAvatarWrapper::after { background-image: url("IMG/ring_overlay3.png") !important; }
+#chat .mes .mesAvatarWrapper .avatar {
+    left: 6.44% !important;
+    top: 28.55% !important;
+    width: 16.98% !important;
+}
+#chat .mes .ch_name .name_text {
+    left: 24.56% !important;
+    top: 20.19% !important;
+    width: 24.26% !important;
+    height: 28.39% !important;
+}
+#chat .mes .mes_buttons,
+#chat .mes .mes_edit_buttons { top: 75.71% !important; }
+#chat .mes .timestamp { left: 31.77% !important; top: 95.90% !important; }
+/* 左上角挂坠：文字绕开，不会被挡住 */
+#chat .mes .mes_text::before {
+    content: "";
+    float: left;
+    width: calc(var(--比例) * 179.0);
+    height: calc(var(--比例) * 175.0);
+}
+#chat .mes .mes_text > :first-child { margin-top: 0; }
+
+/* ---------- 顶栏加高：按素材比例显示，不压扁 ---------- */
+#top-bar {
+    height: var(--顶栏高) !important;
+    border-image: url("IMG/topbar.png") 0 73 0 73 fill / 0 calc(var(--顶栏高) * 0.65) 0 calc(var(--顶栏高) * 0.65) !important;
+}
+#top-settings-holder {
+    height: var(--顶栏高) !important;
+    align-items: center !important;
+}
+
+/* ---------- 输入框加高 ---------- */
+#send_form {
+    min-height: var(--输入框高) !important;
+    padding: calc((var(--输入框高) - 40px) / 2) calc(var(--输入框高) * 0.42) !important;
+    justify-content: center;
+    border-image: url("IMG/input_bar.png") 63 105 63 105 fill / calc(var(--输入框高) * 0.45) calc(var(--输入框高) * 0.75) calc(var(--输入框高) * 0.45) calc(var(--输入框高) * 0.75) !important;
+}
+#nonQRFormItems:has(#send_textarea:placeholder-shown)::before { color: #b06a7c !important; }
