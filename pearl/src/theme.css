@@ -570,7 +570,8 @@ body {
 #left-nav-panel,
 #floatingPrompt,
 #cfgConfig {
-    background: linear-gradient(180deg, rgba(246, 214, 210, .97), var(--面板底色) 140px) !important;
+    /* 面板背景：浅色的珍珠女士插画，想换图就改这里的链接 */
+    background: url("IMG/panel_bg.jpg") center top / cover no-repeat, var(--面板底色) !important;
     border: 1.5px solid #e6c2b6 !important;
     border-radius: 18px !important;
     box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .55), 0 10px 28px rgba(110, 20, 35, .28) !important;
