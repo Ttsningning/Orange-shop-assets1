@@ -531,7 +531,7 @@ body {
     top: -26px;
     width: 30px;
     height: 46px;
-    background: url("IMG/deco_lipstick.png") center / contain no-repeat;
+    background: url("IMG/deco_lipstick2.png") center / contain no-repeat;
     pointer-events: none;
     animation: ms-bob 3.6s ease-in-out infinite;
     z-index: 2;
@@ -642,7 +642,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 28px;
     border: 0;
     border-radius: 0;
-    background: url("IMG/deco_lipstick.png") center / contain no-repeat;
+    background: url("IMG/deco_lipstick2.png") center / contain no-repeat;
     box-shadow: none;
 }
 .neo-range-slider {

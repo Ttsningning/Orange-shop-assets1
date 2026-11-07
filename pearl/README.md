@@ -13,6 +13,6 @@
 | topbar / input_bar | 顶栏、输入框 |
 | btn_* / ico_* | 输入框按钮、编辑、更多、星标、箭头、勾叉、顶栏图标 |
 | frame_circle / frame_heart / frame_portrait | 备用头像框 |
-| deco_* / spinner / btn_loadmore / panel_scene / tile_* | 装饰（口红、爱心宝石、信封、樱桃、星光）、加载图标、加载更多按钮、场景小图 |
+| deco_* / spinner / btn_loadmore / panel_scene / tile_* | 装饰（口红（deco_lipstick2）、爱心宝石、信封、樱桃、星光）、加载图标、加载更多按钮、场景小图 |
 
 ![预览](preview.png)
